@@ -1,0 +1,23 @@
+# title HHU tower
+# Description
+there is a tower in the universe's center - Hohai University, people call it HHU tower. HHU tower has 3 pillars(柱子). there is N plates(盘子), plates are labeled from 1 to N. HHU tower has a strange feature that for every pillar, plates with smaller index are always above plates with bigger index at any time. for example, plate i must be above plate i + 1 if they are placed through the same pillar. Originally, all the plates are placed through pillar 1, the big brother of HHU ask zyyyyy to move one plate from one pillar to the other(must satisfy HHU tower's feature) each day until all the plates are finally placed through pillar 3. however zyyyyy is poor so he want to keep this job as long as possible, so please help him find how many days can he do this job at most? The big brother know that zyyyyy may play trick so he can do this job forever so he ask zyyyyy to make sure that the pillars' state must not be repeated.
+
+# Input
+there are several test cases. each test case has one line with a integer N(1 <= N <= 10000)
+
+# Output
+for each N, output the most steps need. the result can be very large so mod 10000007.
+
+# Sample Input
+1
+
+# Sample Output
+2
+
+# Hint
+origin state: the only pillar is through pillar 1
+day 1: move the only plate from pillar 1 to pillar 2
+day 2: move the only plate from pillar 2 to pillar 3, you can not move to pillar 1 again because that will repeat the origin state.
+
+# Source 
+Calvin

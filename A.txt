@@ -1,0 +1,25 @@
+# title UFO
+# Description
+long long ago, there's a poor guy zyyyyy. one day he met a Huge Hovering UFO(HHU) and ask aliens in the HHU to make him rich, the aliens agreed and they gave him N problems to solve, and promised him if he solve problem i, he will get a[i] yuan for reward. However the aliens are evil, in fact they can get b[i] bytes of the knowledge of human beings if zyyyyy solve problem i. if they their knowledge sum up to more than M, they will explode the world. zyyyyy is very smart, he got the most money without exploding the world and made the aliens very angry. So can you figure out how can he do that?
+
+# Input
+there are several test cases. every test case contains N + 1 lines:
+line 1: N(1 <= N <= 3000), M(1 <= M <= 12000)
+line 2..N+1: line i + 1 gives a[i] and b[i], (1 <= a[i] <= 100, 1 <= b[i] <= 400)
+both N, M, a[i], b[i] are integers
+
+# Output
+for each test case, output the money zyyyyy eventually got
+
+# Sample Input
+4 6
+4 1
+6 2
+12 3
+7 2
+
+# Sample Output
+23
+
+# Source 
+Calvin

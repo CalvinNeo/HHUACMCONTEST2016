@@ -1,0 +1,49 @@
+# title Calvin's Experiment
+# Description
+Calvin Neo is a acmer in HHU, but he is also a civil engineer. Civil Engineering is about moving bricks(搬砖), however it involves many scientific theories and experiments.
+Calvin designed a experiment to evaluate the attribute of soil in a construction site(工地), the construction site can be viewed as a 2-dimension Cartesian Coordinate System(平面直角坐标系), this experiment includes 2 steps.
+1. Calvin choose some point and use CDT(a geological survey method) to test the attribute of soils at that point and use them to work out some assumptions.
+2. Calvin choose n points tested from step 1 and get a cycle(环). he start from point 1 and go along the cycle, visit every point once and finally back to point 1. while walking, Calvin use geological radar(地质雷达) to detect the attribute of soils beneath to prove his assumptions
+however life in Calvin's construction site is hard, there are ways between only several tested points and the geological radar is expensive so that Calvin should find a cycle with the shortest length(周长).
+Calvin is a acmer and he definitely knows the answer, but he is busy moving bricks now, so he ask you for help.
+
+# Input
+there are multiple test cases, every test case has multiple lines:
+line 1: 2 integers n(less than 233), m(less than 1000)
+following n lines: 2 integers x, y stand for the coordinate of points(start from 1), 0 <= (x, y) <= 1000
+following m lines: 2 integers u, v means there is a path **between** u and v
+
+# Output
+for every test case print one line, which is the minimum length(周长)
+print "impossible" in one line if there is no such cycle
+hint: you should use "%.2f\n" to print
+
+# Sample Input
+9 6
+0 0
+0 1
+0 2
+1 0
+1 1
+1 2
+2 0
+2 1
+2 2
+1 3
+1 7
+7 9
+3 9
+2 5
+4 5
+1 0
+1 1
+
+# Sample Output
+4.00
+impossible
+
+# Hint
+choose point 1, 2, 4, 5 as a cycle whose length is 4.00
+
+# Source 
+Calvin
