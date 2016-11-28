@@ -31,10 +31,10 @@ int W[MAXN], D[MAXN];
 int dp[MAXM];
 
 int main() {
-	while (scanf("%d%d", &n, &m) != EOF && n != 0 && m != 0) {
+	while (scanf("%d%d", &n, &m) != EOF) {
 		for (int i = 1; i <= n; i++)
 		{
-			scanf("%d%d", &W[i], &D[i]);
+			scanf("%d%d", &D[i], &W[i]);
 		}
 		memset(dp, 0, sizeof dp);
 		for (int i = 1; i <= n; i++)

@@ -4,7 +4,8 @@ from math import pi, sin, cos, asin, acos
 import math
 
 
-fo = open("C.big.dat", "r+")
+#fo = open("C.big.dat", "r+")
+fo = open("temp.txt", "r+")
 fw = open("C.cad.dat", "w+")
 vn, en = map(int, fo.readline().split())
 v = []

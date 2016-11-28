@@ -1,11 +1,15 @@
 
-problem = "C"
+problem = "D"
 
 def gen_file(inp):
     s = ""
     for line in inp:
         line = line.strip("\n")
-        if(line == "---"):
+        if(line[0:3] == "---"):
+            pass
+        elif line[0:2] == "**":
+            pass
+        elif line == "":
             pass
         else:
             s += line

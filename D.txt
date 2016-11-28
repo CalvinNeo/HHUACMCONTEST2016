@@ -1,3 +1,24 @@
-# title Calvin's Game
+# title The Smartest Guy in HHU
 # Description
-zyyyyy and zzzyy are all very smart guys in HHU and one day they asked Calvin Neo to tell who is smarter tomorrow. However that night a girl whose name I will not mention came to Calvin Neo, gave him some money and asked him to hard point(硬点) zyyyyy to be smarter. Because the money is so much that Calvin no longer need to moving bricks(搬砖) to feed himself so they make a transaction(交易)
+Song and zyyyyy are all very smart guys in HHU and one day they asked Calvin to tell who is smarter. However later that day Song came to Calvin Neo, gave him some money and asked him to hard point(钦定) her to be smarter. Because the money was so much that Calvin no longer need to moving bricks(搬砖) to feed himself so they made a transaction.
+The next day, Calvin introduce a game to Song and zyyyyy. In this game, Song and zyyyyy take turns to multiply an integer p by integer from 2 to 9. Song always starts with p = 1, does her multiplication, then zyyyyy multiplies the number, then Song and so on. Before a game starts, Calvin decides an integer 1 < n < 4294967295 and the winner is who first reaches p >= n. Because both Song and zyyyyy are smart, so they all play perfectly.
+Calvin has some n, please help him decide which of them can make Song win.
+
+# Input
+one line for one case with a integer n
+
+# Output 
+"yes" if sxm can win, "no" otherwise
+
+# Sample Input
+162
+17
+34012226
+
+# Sample Output
+yes
+no
+yes
+
+# Source
+Calvin

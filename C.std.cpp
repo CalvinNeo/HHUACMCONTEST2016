@@ -94,6 +94,13 @@ int sqrs(int x, int y) {
 	return x * x + y * y;
 }
 
+bool point_cmp(const int & i, const int & j) {
+	if (px[i] == px[j]) {
+		return py[i] < py[j];
+	}
+	return px[i] < px[j];
+}
+
 int main() {
 	while (scanf("%d%d", &n, &m) != EOF) {
 		for (int i = 1; i <= m; i++)
@@ -127,7 +134,7 @@ int main() {
 		}
 		for (int i = 1; i <= m; i++)
 		{
-			sort(online[i].begin(), online[i].end());
+			sort(online[i].begin(), online[i].end(), point_cmp);
 		}
 		for (int i = 1; i <= m; i++)
 		{
@@ -140,7 +147,14 @@ int main() {
 					dist[pt1][pt2] = dist[pt2][pt1] = mp[pt1][pt2] = mp[pt2][pt1] = cost;
 			}
 		}
-		
+		//for (int i = 1; i <= n; i++)
+		//{
+		//	for (int j = 1; j <= n; j++)
+		//	{
+		//		printf("%11.2f ", mp[i][j]);
+		//	}
+		//	puts("");
+		//}
 		double ans = floyd();
 		if (minc > INF - 1) {
 			puts("impossible");

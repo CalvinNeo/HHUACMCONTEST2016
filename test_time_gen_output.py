@@ -2,7 +2,7 @@ import os, sys
 import subprocess
 import time
 
-problem = "C"
+problem = "A"
 
 inp = open(problem + ".in", "rb")
 oup = open(problem + ".out", "wb")
